@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Calculate the area</title>
+</head>
+<body>
+    <div class="content">
+        <!-- h1 with the title -->
+        <div class="title">
+            <h1>Calculate the area.</h1>
+        </div>
+
+        <!-- Card with the triangle area and perimeter content -->
+        <div class="card">
+            <h2>Triangle Area</h2>
+
+            <div class="form-group">
+                <label for="sidesInputTriangle">Sides (cm): </label>
+                <input name="sidesInputTriangle" id="sidesInputTriangle" placeholder="000" type="number" />
+            </div>
+
+            <div>
+                <p><b>The triangle area is: </b><span id="triangleArea"></span></p>
+                <p><b>The triangle perimeter is: </b><span id="trianglePerimeter">5</span></p>
+            </div>
+
+            <Button id="btnTriangle" onclick="calculateTriangleArea()">Calculate</Button>
+
+            <p class="error blind" id="pTriangleError">Most be a number greater than 0</p>
+        </div>
+
+        <!-- Card with the square area and perimeter content -->
+        <div class="card">
+            <h2>Square Area</h2>
+
+            <div class="form-group">
+                <label for="sidesInputSquare">Sides (cm): </label>
+                <input name="sidesInputSquare" id="sidesInputSquare" placeholder="000" type="number" />
+            </div>
+
+            <div>
+                <p><b>The square area is: </b><span id="squareArea"></span></p>
+                <p><b>The square perimeter is: </b><span id="squarePerimeter"></span></p>
+            </div>
+
+            <Button id="btnSquare" onclick="calculateSquareArea()">Calculate</Button>
+
+            <p class="error blind" id="pSquareError">Most be a number greater than 0</p>
+        </div>
+
+        <!-- Card with the rectangle area and perimeter content -->
+        <div class="card">
+            <h2>Rectangle Area</h2>
+
+            <div class="form-group">
+                <label for="baseInputRectangle">Base (cm): </label>
+                <input name="baseInputRectangle" id="baseInputRectangle" placeholder="000" type="number" />
+            </div>
+
+            <div class="form-group">
+                <label for="heightInputRectangle">Height (cm): </label>
+                <input name="heightInputRectangle" id="heightInputRectangle" placeholder="000" type="number" />
+            </div>
+
+            <div>
+                <p><b>The rectangle area is: </b><span id="rectangleArea"></span></p>
+                <p><b>The rectangle perimeter is: </b><span id="rectanglePerimeter"></span></p>
+            </div>
+
+            <Button id="btnRectangle" onclick="calculateRectangleArea()">Calculate</Button>
+
+            <p class="error blind" id="pRectangleError">Most be a number greater than 0</p>
+        </div>
+
+        <!-- Card with the circle area and perimeter content -->
+        <div class="card">
+            <h2>Circle Area</h2>
+
+            <div class="form-group">
+                <label for="diameterInputCircle">Diameter (cm): </label>
+                <input name="diameterInputCircle" id="diameterInputCircle" placeholder="000" type="number" />
+            </div>
+
+            <div>
+                <p><b>The circle area is: </b><span id="circleArea"></span></p>
+                <p><b>The circle perimeter is: </b><span id="circlePerimeter"></span></p>
+            </div>
+
+            <Button id="btnCircle" onclick="calculateCircleArea()">Calculate</Button>
+
+            <p class="error blind" id="pCircleError">Most be a number greater than 0</p>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
